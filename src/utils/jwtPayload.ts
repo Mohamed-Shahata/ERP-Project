@@ -1,5 +1,5 @@
 import { Schema } from "mongoose";
-import { AppRoles } from "../modules/auth/auth.types";
+import { AppRoles } from "../modules/auth/auth.roles";
 
 export interface JWTPayload {
   id: Schema.Types.ObjectId;
