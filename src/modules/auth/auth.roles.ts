@@ -3,4 +3,5 @@ export enum AppRoles {
   MANAGER = "manager",
   SALES = "sales",
   EMPLOYEE = "employee",
+  VIEWER = "viewer",
 }

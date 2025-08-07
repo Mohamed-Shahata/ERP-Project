@@ -18,7 +18,7 @@ class AuthController {
     this.authService = new AuthService();
   }
 
-  // POST - /api/v1/auth/register
+  // POST - ~/auth/register
   public register = async (req: Request, res: Response) => {
     const { name, email, password } = req.body;
 
@@ -40,7 +40,7 @@ class AuthController {
     sendResponse(res, message, StatusCode.CREATED, true);
   };
 
-  // POST - /api/v1/auth/login
+  // POST - ~/auth/login
   public login = async (req: Request, res: Response) => {
     const { email, password } = req.body;
 
@@ -69,7 +69,7 @@ class AuthController {
     sendResponse(res, "Login successful", StatusCode.OK, true);
   };
 
-  // POST - /api/v1/auth/logout
+  // POST - ~/auth/logout
   public logout = async (req: Request, res: Response) => {
     const { accessToken } = req.cookies;
 

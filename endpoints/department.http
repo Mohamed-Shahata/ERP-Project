@@ -1,0 +1,26 @@
+### Create a new department
+POST http://localhost:5000/api/v1/departments
+Content-Type: application/json
+
+{
+  "name": "Tech lead",
+  "description": "Lead Software Engineer We are excited to welcome Lead Software Engineers to our innovative development teams in Bangalore. In this role, you will be essential in crafting, developing, and sustaining the products, platform services, and infrastructure that support global logistics.",
+  "manager": "689398ba917c97c5aaf817c2"
+}
+
+### update department
+PUT  http://localhost:5000/api/v1/departments/68949f70c113e579b3a88795
+Content-Type: application/json
+
+{
+  "name": "Developer"
+}
+
+### delete department
+DELETE http://localhost:5000/api/v1/departments/6891ec912c8a6079a5717d37
+
+### get department
+GET http://localhost:5000/api/v1/departments/68949f70c113e579b3a88795
+
+### get all departments
+GET http://localhost:5000/api/v1/departments

@@ -2,7 +2,14 @@ export interface IUser {
   name: string;
   email: string;
   password: string;
+  gender: string;
+  image: string;
   role: string;
+}
+
+export enum UserGender {
+  MALE = "male",
+  FEMALE = "female",
 }
 
 export interface RegisterDto {

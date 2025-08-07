@@ -1,5 +1,5 @@
 import { Schema, model } from "mongoose";
-import { IUser } from "./auth.types";
+import { IUser, UserGender } from "./auth.types";
 import bcrypt from "bcryptjs";
 import { AppRoles } from "./auth.roles";
 
@@ -22,10 +22,19 @@ const userSchema = new Schema<IUser>(
       max: 50,
       required: true,
     },
+    gender: {
+      type: String,
+      enum: UserGender,
+      default: UserGender.MALE,
+    },
+    image: {
+      type: String,
+      default: "",
+    },
     role: {
       type: String,
       enum: AppRoles,
-      default: AppRoles.EMPLOYEE,
+      default: AppRoles.VIEWER,
     },
   },
   { timestamps: true }

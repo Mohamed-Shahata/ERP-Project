@@ -1,0 +1,31 @@
+### Create a new employee
+POST http://localhost:5000/api/v1/employees
+Content-Type: application/json
+
+{
+  "userId": "6891b951b2edf9578c34035b",
+  "phone": "201152432513",
+  "address": "Markz bader elnagath",
+  "position": "Backend",
+  "department": "6891ec912c8a6079a5717d37",
+  "salary": 5000,
+  "status": "active",
+  "nationalId": "114555224585444"
+}
+
+### update employee
+PUT  http://localhost:5000/api/v1/employees/689390ed79537de0de44e89c
+Content-Type: application/json
+
+{
+  "salary": 70000
+}
+
+### delete employee
+DELETE http://localhost:5000/api/v1/employees/6891f1e157922c771bba0b56
+
+### get employee
+GET http://localhost:5000/api/v1/employees/689398ba917c97c5aaf817c2
+
+### get all employees
+GET http://localhost:5000/api/v1/employees

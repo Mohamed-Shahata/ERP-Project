@@ -1,0 +1,22 @@
+### register
+POST http://localhost:5000/api/v1/auth/register
+Content-Type: application/json
+
+{
+  "name":"Omer ahmed",
+  "email": "omerahmed@gmail.com",
+  "password": "123456789"
+}
+
+### login
+POST http://localhost:5000/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "email": "omerahmed@gmail.com",
+  "password": "123456789"
+}
+
+### logout
+POST http://localhost:5000/api/v1/auth/logout
+Content-Type: application/json
